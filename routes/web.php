@@ -15,10 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/name/{name}/lastname/{lastname?}', function($name, $lastname = null) {
-	return 'Recibí:'.$name.' y lastname: '.$lastname;
-});
-
-Route::get('/mi-primera-ruta', function() {
-	return 'Hello world1';
-});
+Route::get('/prueba/{name}', 'PruebaController@prueba');
