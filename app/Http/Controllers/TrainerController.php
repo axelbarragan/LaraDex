@@ -2,6 +2,7 @@
 
 namespace LaraDex\Http\Controllers;
 
+use LaraDex\Trainer;
 use Illuminate\Http\Request;
 
 class TrainerController extends Controller
@@ -38,7 +39,7 @@ class TrainerController extends Controller
         $trainer = new Trainer();
         $trainer->name = $request->input('name');
         $trainer->save();
-        
+
         return 'Saved';
     }
 
