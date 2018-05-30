@@ -11,6 +11,11 @@
 	</div>
 
 	<div class="form-group">
+		<label for="">Descripción</label>
+		<textarea name="description" class="form-control"></textarea>
+	</div>
+
+	<div class="form-group">
 		<label for="">Avatar</label>
 		<input type="file" name="avatar"></input>
 	</div>
